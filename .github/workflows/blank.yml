@@ -2,7 +2,7 @@ name: Supabase Keep Alive
 
 on:
   schedule:
-    - cron: "*/5 * * * *"
+    - cron: "0 */6 * * *"
   workflow_dispatch:
 
 jobs:
@@ -11,6 +11,14 @@ jobs:
     steps:
       - name: Ping Supabase
         run: |
-          curl -X GET "https://zzzobpaunsikkxbdjyeo.supabase.co/rest/v1/Productos?select=*" \
+          curl -X GET "https://zzzobpaunsikkxbdjyeo.supabase.co/rest/v1/Productos?select=id&limit=1" \
           -H "apikey: sb_publishable_gTZl4ULX9G7mHr7iKWjXXQ_Cwvi-52U" \
           -H "Authorization: Bearer sb_publishable_gTZl4ULX9G7mHr7iKWjXXQ_Cwvi-52U"
+
+          curl -X GET "https://nkkyyqqqusodhwqvprik.supabase.co/rest/v1/cortes?select=id&limit=1" \
+          -H "apikey: sb_publishable_0PXTRIVNAM7Kz9uDKK95IA_gCw-HHLI" \
+          -H "Authorization: Bearer sb_publishable_0PXTRIVNAM7Kz9uDKK95IA_gCw-HHLI"
+
+          curl -X GET "https://fcuyqeuakovpwspqafzx.supabase.co/rest/v1/productos?select=id&limit=1" \
+          -H "apikey: sb_publishable_hEn58UnsSTQPbRbqD1uvHg_XatmgjnZ" \
+          -H "Authorization: Bearer sb_publishable_hEn58UnsSTQPbRbqD1uvHg_XatmgjnZ"
