@@ -22,3 +22,7 @@ jobs:
           curl -X GET "https://fcuyqeuakovpwspqafzx.supabase.co/rest/v1/productos?select=id&limit=1" \
           -H "apikey: sb_publishable_hEn58UnsSTQPbRbqD1uvHg_XatmgjnZ" \
           -H "Authorization: Bearer sb_publishable_hEn58UnsSTQPbRbqD1uvHg_XatmgjnZ"
+
+          curl -X GET "https://xbmlpqkjmyldamhtzsgu.supabase.co/rest/v1/comidas?select=id&limit=1" \
+          -H "apikey: sb_publishable_exApQG5qLdSFGMq9sxhnKg_T1ZnBLYs" \
+          -H "Authorization: Bearer sb_publishable_exApQG5qLdSFGMq9sxhnKg_T1ZnBLYs"
